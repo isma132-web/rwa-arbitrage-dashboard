@@ -1,0 +1,36 @@
+.app {
+  font-family: 'Arial', sans-serif;
+  background: rgba(10, 10, 30, 0.8);
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
+}
+
+.button {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: background 0.3s;
+  border-radius: 8px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 8px rgba(0, 255, 204, 0.2);
+}
+
+.button:hover {
+  background: rgba(0, 255, 204, 0.5);
+  animation: neonGlow 1.2s infinite alternate;
+}
+
+@keyframes neonGlow {
+  0% { text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc; }
+  100% { text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc; }
+}
